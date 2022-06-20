@@ -33,9 +33,17 @@ Test::Test(int w,int h):width(w),height(h)
 
 int main()
 {
+	int a = 4;
+	cout << &a << endl;
+	cout << &a+1 << endl;
 	//Test t(40,40);
 	int data[2][3];
 	cout << data << endl;
 	cout << data+1<< endl;
+	cout << &data[0]+1 << endl;
 	cout << &data+1<<endl;
+
+	int (*p4)[3];
+	cout << p4 << endl;
+	cout << (p4+1) << endl;
 }
